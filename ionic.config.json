@@ -1,0 +1,7 @@
+{
+  "name": "calendarApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

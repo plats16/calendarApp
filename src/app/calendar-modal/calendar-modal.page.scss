@@ -1,0 +1,59 @@
+// ion-content {
+//     font-family: Arial, Helvetica, sans-serif; 
+    
+// }
+
+.main-header {
+    background-color: #FFC409;   
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+} 
+
+p {
+    color: #143845; 
+    
+}
+// for checking grid,row and column responsiveness only
+// ion-col > div {
+//     background-color: #f7f7f7;
+//     border: solid 1px #ddd;
+//     padding: 10px;
+// } 
+
+ion-button { 
+    color:#143845;
+ 
+}   
+
+ion-icon {
+    font-size: 25px;
+}
+
+.btn { 
+    margin-top: 30px;
+    width: 100px;
+    border-radius: 3px;    
+    border: 2px solid #143845;  
+    font-size: 15px;
+    padding: 7px;
+    color: #143845;   
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    background-color:white; 
+    outline: none; 
+}   
+
+.btn:hover { 
+     opacity: 0.6;
+}   
+
+.arrow-swiper { 
+
+    width: 50px;  
+    margin-top: 14px;
+    color: #143845;   
+    background-color: #FFC409;  
+    outline: none; 
+}  
+
+// I used global.scss for calendar custom styles

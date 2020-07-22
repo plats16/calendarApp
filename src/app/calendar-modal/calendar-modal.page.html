@@ -1,0 +1,81 @@
+
+ 
+ <ion-content fullscreen> 
+
+  <ion-grid> 
+     <!-- main header row -->
+    <ion-row class="main-header"> 
+      <ion-col  text-left>
+        <button class="arrow-swiper" ion-button (click)="slidePrev()">
+          <ion-icon name="ios-arrow-back" slot="icon-only"></ion-icon>
+        </button>
+      </ion-col> 
+
+      <ion-col text-center>  
+        <!-- title of monthview -->
+        <p> {{ viewTitle }} </p>
+      </ion-col>
+  
+      <ion-col  text-right>
+        <button  class="arrow-swiper" ion-button (click)="slideNext()">
+          <ion-icon name="ios-arrow-forward" slot="icon-only"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row> 
+    <!-- calendar row -->
+         <calendar  
+        
+          autoSelect=true
+          [calendarMode]="calendar.mode"
+          [currentDate]="calendar.currentDate"  
+          startingDayMonth="1"
+          [showEventDetail]="false"  
+          (onCurrentDateChanged)="onCurrentDateChanged($event)"
+          (onTitleChanged)="onViewTitleChanged($event)"> 
+
+          </calendar>  
+     
+    <!-- button row -->
+    <ion-row> 
+      <!-- for responsiveness of buttons -->
+      <ion-col>
+        <div>
+
+        </div>
+      </ion-col> 
+
+      <ion-col>
+        <div>
+          
+        </div>
+      </ion-col> 
+
+      <ion-col>
+        <div>
+          <button class="btn" block ion-button  (click)="closeModal()">Cancel</button> 
+        </div>
+      </ion-col>  
+
+      <ion-col>
+        <div>
+          <button class="btn" block ion-button  (click)="passDateData()">Ok</button>
+        </div>
+      </ion-col>  
+
+      <ion-col>
+        <div>
+
+        </div>
+      </ion-col>  
+      
+      <ion-col>
+        <div>
+         
+        </div>
+      </ion-col>
+    </ion-row> 
+    
+  </ion-grid>
+  
+ 
+</ion-content>
